@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="/media/icons/ruby.png" type="image/png" />
+  <title>Ruby Arcade proxy</title>
+
+  <link rel="stylesheet" href="./css/master.css" />
+  <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script src="./js/preload.js"></script>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+  rel="stylesheet"
+/>
+  <script>
+    atOptions = {
+      'key': 'fc0ad22bd8c1ea22c8c08df927121e8f',
+      'format': 'iframe',
+      'height': 60,
+      'width': 468,
+      'params': {}
+    };
+  </script>
+
+<style>
+  body {
+    background-color: #1e1e1e;
+    color: white;
+
+  }
+
+  h1 {
+      z-index: 9999;
+      color:#fff;
+
+
+    }
+
+    /* Full-screen button */
+    #fullScreenButton {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #1e1e1e; /* Semi-transparent background */
+      z-index: 9998; /* Ensure the button is above everything else */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .search-button {
+      padding: 20px 40px;
+      background-color: #cc5850;
+      font-family: "Lexend";
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: all 350ms;
+      cursor: pointer;
+      font-weight: 900;
+      font-size: 24px;
+      margin-top: 20px; /* Add margin between the text and the button */
+    }
+
+    .search-button:hover {
+      background-color: #121212;
+    }
+
+    .pxyinput {
+      width: 400px;
+      padding: 10px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      opacity: 0; /* Set opacity to 0 to make it invisible */
+    }
+
+    /* Style for the text */
+    .text-above-button {
+      color: white;
+      font-family: "Lexend";
+      font-size: 72px;
+      font-weight: 800;
+      margin-bottom: 20px; /* Add margin between the text and the button */
+    }
+
+</style>
+
+
+</head>
+
+
+    <p id="time"></p>
+
+
+
+    <div id="fullScreenButton">
+      <p class="text-above-button">Discord</p>
+      <input class="pxyinput" type="text" placeholder="⌕ Search" value="example.com" />
+      <button id="startButton" class="search-button" onclick="start()">Start</button>
+    </div>
+  
+    <script>
+      function start() {
+        var fullScreenButton = document.getElementById('fullScreenButton');
+        if (fullScreenButton) {
+          fullScreenButton.style.display = 'none';
+        }
+      }
+    </script>
+
+  </div>
+  <iframe class="frame"></iframe>
+</body>
+
+<script src="./js/index.js"></script>
+<script src="./js/search.js"></script>
+
+</html>
