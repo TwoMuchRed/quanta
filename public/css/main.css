@@ -1,14 +1,18 @@
 @import url(themes.css);
 @import url(cards.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&display=swap');
 
 body {
     color: var(--text-color);
-    background-color: var(--background);
+    background-color: #111111;
     background-image: var(--background);
     position: relative;
     height: 100vh;
     text-align: center;
+    font-family: "Inter";
     background-size: cover;
+    font-weight: 800;
     -webkit-background-size: cover;
 }
 
@@ -18,19 +22,10 @@ body {
   }
   
    
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--accent); 
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent); 
-  }
-
 h1 , h2 , h3  {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 h1 { font-size: 50px; }
@@ -40,7 +35,7 @@ h1 { font-size: 50px; }
 p { font-size: 20px; }
 
 h1 > span {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Inter", sans-serif;
     color: var(--accent);
 }
 
@@ -181,26 +176,31 @@ button:hover {
     margin: 15px;
   }
 
-  .pxyinput {
-    width: 600px;
-    height: 50px;
-    margin: 10px;
-  }
 
-  input[type=text], button.secondary, select {
-     background-color: #111;
-     transition: 0.4s border;
-     border-radius: 5px;
-     border: none;
-     font-size: 20px;
-     color: white;
-     text-align: center;
-     padding: 5px 15px;
-     margin: 5px auto;
-  }
-  input[type=text]:focus {
-    outline: none;
- }
+
+ input {
+  background: none;
+  font-family: "Inter";
+  padding: 0px 17px;
+  height: 48px;
+  font-weight: 500;
+  border: 1px solid rgb(255, 255, 255, .2);
+  color: var(--text-color);
+  border-radius: 3px;
+  outline: none;
+  width: 350px;
+  margin-top: 5px;
+  border-radius: 50px;
+  color: #FFF;
+}
+
+input:focus {
+  border: 1px solid rgba(253, 253, 253, 0.514);
+  border-radius: 6px;
+  animation: fadeInAnimation ease-in-out 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
  button.secondary img {
   height: 25px;
@@ -228,11 +228,9 @@ margin: 5px auto;
   background-color: white;
   display: block;
   margin: auto;
-
   border: none;
-  
-  height: calc(100vh - 80px);
-  width: calc(100vw - 30px);
+  height: 100vh;
+  width: 100%;
 }
 
 .ad {
