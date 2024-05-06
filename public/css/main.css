@@ -23,10 +23,13 @@ body {
   
    
 h1 , h2 , h3  {
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
+    font-family: "Inter", "Lexend" sans-serif;
+    font-weight: 800;
     margin-bottom: 10px;
 }
+
+
+
 
 h1 { font-size: 50px; }
 
@@ -109,11 +112,11 @@ button:hover {
 }
 
 .gamecontainer {
-    height: calc(100vh - (75px + 25px));
+    height: 99vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 15px;
+    margin: 5px;
 }
 
 #gameInfo {
@@ -128,7 +131,6 @@ button:hover {
     background-color: white;
   }
   #gameInfo .gameHeader {
-    display: flex;
     align-items: center;
     justify-content: center;
     margin: 25% 25px;
@@ -177,30 +179,50 @@ button:hover {
   }
 
 
+  .input-container {
+    position: relative;
+    width: 350px;
+    user-select: none;
+    margin-top: 5px;
+  }
+  
+  .input-container img.input-image {
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    margin-left: 5px;
+    user-select: none;
+    transform: translateY(-50%);
+    width: 19px;
+    -webkit-user-drag: none;
+    height: auto; 
+  }
+  
+  .pxyinput {
+    background: none;
+    font-family: "Inter";
+    padding: 0px 17px;
+    height: 48px;
+    user-select: none;
+    transition: all 350ms;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, .2);
+    color: #FFF;
+    border-radius: 25px;
+    outline: none;
+    width: calc(100% - 40px); /* Adjust according to image width and padding */
+    padding-left: 40px; /* Ensure space for the image */
+  }
+  
+  .pxyinput:focus {
+    border-radius: 8px;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
 
- input {
-  background: none;
-  font-family: "Inter";
-  padding: 0px 17px;
-  height: 48px;
-  font-weight: 500;
-  border: 1px solid rgb(255, 255, 255, .2);
-  color: var(--text-color);
-  border-radius: 3px;
-  outline: none;
-  width: 350px;
-  margin-top: 5px;
-  border-radius: 50px;
-  color: #FFF;
-}
 
-input:focus {
-  border: 1px solid rgba(253, 253, 253, 0.514);
-  border-radius: 6px;
-  animation: fadeInAnimation ease-in-out 0.3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
+  
 
  button.secondary img {
   height: 25px;
@@ -233,11 +255,42 @@ margin: 5px auto;
   width: 100%;
 }
 
-.ad {
-  height: 60px;
-  width: 468px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.cardgroup {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+
+.card img {
+  height: 60%;
+  margin-top: 15%;
+  width: 60%;
+  border-radius: 8px;
+  transition: transform 0.1s;
+  margin-bottom: 5px;
+}
+
+.card {
+  background-color: #111111;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  font-size: 10px;
+  width: 15vh;
+  height: 15vh;
+  font-weight: bold;
+  font-family: "Lexend", sans-serif;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 350ms;
+}
+
+.card:hover {
+  background-color: #373737;
+  
 }

@@ -31,7 +31,7 @@ var apps = [
     },
     {
       "id": "geforce",
-      "title": "GeForce NOW (may not work)",
+      "title": "GeForce NOW",
       "url": "https://play.geforcenow.com",
       'image': 'https://raw.githubusercontent.com/proudparrot2/cdn/main/8z9zeDIT_400x400-removebg-preview.png'
     },
@@ -117,6 +117,7 @@ var apps = [
       "image": "https://cattn.github.io/gba/pwa/apple-icon-180.png",
       "description": "A Game Boy Advance retro emulator with over 3000 games, and other consoles as well"
     }
+
   ]
   
   var customapps = JSON.parse(localStorage.getItem("customapps"))
