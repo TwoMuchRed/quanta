@@ -44,3 +44,30 @@ function search(input, template) {
   // Treat the input as a search query
   return `https://www.google.com/search?q=${encodeURIComponent(input)}`
 }
+
+
+function refreshFrame() {
+  var frame = document.querySelector("iframe");
+  frame.contentWindow.location.reload();
+}
+
+function toggleFullscreen() {
+  var frame = document.querySelector("iframe");
+  if (!frame.contentDocument.fullscreenElement) {
+    frame.contentDocument.documentElement.requestFullscreen();
+  } else {
+    if (frame.contentDocument.exitFullscreen) {
+      frame.contentDocument.exitFullscreen();
+    }
+  }
+}
+
+function goBack() {
+  var frame = document.querySelector("iframe");
+  frame.contentWindow.history.back();
+}
+
+function goForward() {
+  var frame = document.querySelector("iframe");
+  frame.contentWindow.history.forward();
+}

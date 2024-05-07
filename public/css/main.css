@@ -247,11 +247,11 @@ margin: 5px auto;
 
  .frame {
   border-radius: 5px;
-  background-color: white;
+  background-color: rgb(35, 35, 35);
   display: block;
   margin: auto;
   border: none;
-  height: 100vh;
+  height: calc(100vh - 55px);
   width: 100%;
 }
 

@@ -58,19 +58,6 @@
   cursor: pointer;
 }
 
-.navbar span {
-  color: #cc5850;
-  transition: all 350ms;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-right: 5px;
-}
-
-.navbar span:hover {
-  color: #ffffff;
-}
-
-
 .navbar .navbar-right {
   float: right;
 }

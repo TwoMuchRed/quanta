@@ -27,12 +27,42 @@
 
   }
 
+  .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .nav img {
+      width: 30px; 
+      height: 30px; /* Adjust size as needed */
+      cursor: pointer;
+    }
+
+    .center-container {
+      text-align: center;
+      margin-top: 50px;
+    }
 
 
 </style>
 
 
 </head>
+<body>
+  <div class="nav">
+    <img src="assets/images/back.png" alt="Back" onclick="goBack()">
+    <img src="assets/images/foward.png" alt="Forward" onclick="goForward()">
+   
+    <div class="input-container">
+      <img src="assets/images/search.png" alt="Image" class="input-image">
+      <input class="pxyinput" type="text" placeholder="Search Google or type a URL">
+
+    </div>
+    <img src="assets/images/refresh.png" alt="Refresh" onclick="refreshPage()">
+    <img src="assets/images/fullscreen.png" alt="Fullscreen" onclick="toggleFullscreen()">
+  </div>
 
 
     <p id="time"></p>
@@ -41,12 +71,17 @@
 
   <div class="center-container">
     <h1>Ruby Arcade.</h1>
-    <div class="input-container">
+
+    <!-- <div class="input-container">
       <img src="assets/images/search.png" alt="Image" class="input-image">
       <input class="pxyinput" type="text" placeholder="Search Google or type a URL">
+    -->
     </div>
   </div>
-  <iframe class="frame"></iframe>
+  <iframe class="frame">
+
+  </iframe>
+
 </body>
 
 <script src="./js/index.js"></script>
