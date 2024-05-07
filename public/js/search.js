@@ -68,11 +68,13 @@ function toggleFullscreen() {
 
 function goBack() {
   var frame = document.querySelector("iframe");
-  frame.contentWindow.history.back(); 
+  if (frame.contentWindow.history.length > 1) {
+    frame.contentWindow.history.back(); // Navigate back in the iframe's history
+  }
 }
 
-
+// Function to navigate forward in the iframe's history
 function goForward() {
   var frame = document.querySelector("iframe");
-  frame.contentWindow.history.forward(); 
+  frame.contentWindow.history.forward(); // Navigate forward in the iframe's history
 }
