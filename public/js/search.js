@@ -46,9 +46,14 @@ function search(input, template) {
 }
 
 
+window.addEventListener('beforeunload', function(event) {
+  refreshFrame(); // Refresh the iframe's content before the page is refreshed
+});
+
+// Function to refresh the content of the iframe
 function refreshFrame() {
-  var frame = document.querySelector("iframe");
-  frame.contentWindow.location.reload();
+  var timestamp = new Date().getTime(); // Generate a timestamp to append as a query parameter
+  frame.src = frame.src.split('?')[0] + '?' + timestamp; // Append timestamp as a query parameter to the existing URL
 }
 
 function toggleFullscreen() {
