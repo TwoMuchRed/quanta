@@ -49,6 +49,12 @@ function search(input, template) {
 function refreshFrame() {
   var frame = document.querySelector("iframe");
   frame.contentWindow.location.reload();
+  console.log("Frame refreshed");
+}
+
+function refreshFrame() {
+  localStorage.setItem('current-url', iframe.src);
+  iframe.src = localStorage.getItem('current-url');
 }
 
 function toggleFullscreen() {
