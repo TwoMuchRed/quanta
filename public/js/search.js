@@ -46,18 +46,9 @@ function search(input, template) {
 }
 
 
-window.addEventListener('beforeunload', function(event) {
-  refreshFrame(); // Refresh the iframe's content before the page is refreshed
-});
-
-// Function to refresh the content of the iframe
 function refreshFrame() {
-  // Navigate back in history
-  window.history.back();
-  // Navigate forward in history after a short delay (e.g., 100 milliseconds)
-  setTimeout(function() {
-    window.history.forward();
-  }, 100);
+  var frame = document.querySelector("iframe");
+  frame.contentWindow.location.reload();
 }
 
 function toggleFullscreen() {
