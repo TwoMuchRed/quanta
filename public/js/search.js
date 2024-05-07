@@ -47,15 +47,13 @@ function search(input, template) {
 
 
 function refreshFrame() {
-  var frame = document.querySelector("iframe");
-  frame.contentWindow.location.reload();
-  console.log("Frame refreshed");
+  var frames = document.querySelectorAll("iframe");
+  frames.forEach(function(frame) {
+    frame.contentWindow.location.reload();
+  });
+  console.log("Frames refreshed");
 }
 
-function refreshFrame() {
-  localStorage.setItem('current-url', iframe.src);
-  iframe.src = localStorage.getItem('current-url');
-}
 
 function toggleFullscreen() {
   var frame = document.querySelector("iframe");
@@ -69,11 +67,23 @@ function toggleFullscreen() {
 }
 
 function goBack() {
-  var frame = document.querySelector("iframe");
-  frame.contentWindow.history.back();
+  const activeIframe = document.querySelector("#iframe-container iframe.active")
+  if (activeIframe) {
+    activeIframe.contentWindow.history.back()
+    iframe.src = activeIframe.src
+    Load()
+  } else {
+    console.error("No active iframe found")
+  }
 }
 
 function goForward() {
-  var frame = document.querySelector("iframe");
-  frame.contentWindow.history.forward();
+  const activeIframe = document.querySelector("#iframe-container iframe.active")
+  if (activeIframe) {
+    activeIframe.contentWindow.history.forward()
+    iframe.src = activeIframe.src
+    Load()
+  } else {
+    console.error("No active iframe found")
+  }
 }
