@@ -67,23 +67,12 @@ function toggleFullscreen() {
 }
 
 function goBack() {
-  const activeIframe = document.querySelector("#iframe-container iframe.active")
-  if (activeIframe) {
-    activeIframe.contentWindow.history.back()
-    iframe.src = activeIframe.src
-    Load()
-  } else {
-    console.error("No active iframe found")
-  }
+  var frame = document.querySelector("iframe");
+  frame.contentWindow.history.back(); 
 }
 
+
 function goForward() {
-  const activeIframe = document.querySelector("#iframe-container iframe.active")
-  if (activeIframe) {
-    activeIframe.contentWindow.history.forward()
-    iframe.src = activeIframe.src
-    Load()
-  } else {
-    console.error("No active iframe found")
-  }
+  var frame = document.querySelector("iframe");
+  frame.contentWindow.history.forward(); 
 }
