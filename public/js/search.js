@@ -66,6 +66,7 @@ function toggleFullscreen() {
   }
 }
 
+
 function goBack() {
   var frame = document.querySelector("iframe");
   if (frame.contentWindow.history.length > 1) {
