@@ -45,12 +45,18 @@
       margin-top: 50px;
     }
 
-
+    #txt {
+            font-size: 40px; 
+            font-family: "Lexend";
+            font-weight: 900; 
+            color: #ffffff;
+        }
+        
 </style>
 
 
 </head>
-<body>
+<body onload="startTime()">
   <div class="nav">
     <img src="assets/images/back.png" alt="Back" onclick="goBack()">
     <img src="assets/images/foward.png" alt="Forward" onclick="goForward()">
@@ -66,12 +72,14 @@
 
 
     <p id="time"></p>
-
+    
 
 
   <div class="center-container">
     <h1>Ruby Arcade.</h1>
-
+    <hr style="height: 1px; background-color: white; border-radius: 8px;">
+    
+    <div id="txt"></div>
     <!-- <div class="input-container">
       <img src="assets/images/search.png" alt="Image" class="input-image">
       <input class="pxyinput" type="text" placeholder="Search Google or type a URL">
@@ -87,6 +95,22 @@
 <script src="./js/index.js"></script>
 <script src="./js/search.js"></script>
 
-
+<script>
+  function startTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+    setTimeout(startTime, 1000);
+  }
+  
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+  </script>
 
 </html>
