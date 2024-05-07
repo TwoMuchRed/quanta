@@ -52,8 +52,12 @@ window.addEventListener('beforeunload', function(event) {
 
 // Function to refresh the content of the iframe
 function refreshFrame() {
-  var timestamp = new Date().getTime(); // Generate a timestamp to append as a query parameter
-  frame.src = frame.src.split('?')[0] + '?' + timestamp; // Append timestamp as a query parameter to the existing URL
+  // Navigate back in history
+  window.history.back();
+  // Navigate forward in history after a short delay (e.g., 100 milliseconds)
+  setTimeout(function() {
+    window.history.forward();
+  }, 100);
 }
 
 function toggleFullscreen() {
