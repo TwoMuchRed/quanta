@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
+  <title>Ruby Arcade proxy</title>
+
+  <link rel="stylesheet" href="./css/master.css" />
+  <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script src="./js/preload.js"></script>
+
+  <script>
+    atOptions = {
+      'key': 'fc0ad22bd8c1ea22c8c08df927121e8f',
+      'format': 'iframe',
+      'height': 60,
+      'width': 468,
+      'params': {}
+    };
+  </script>
+
+<style>
+  body {
+    background-color: #111111;
+    color: #D8C4D9;
+
+  }
+
+  .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .nav img {
+      width: 30px; 
+      height: 30px; /* Adjust size as needed */
+      cursor: pointer;
+    }
+
+    .center-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    #txt {
+            font-size: 40px; 
+            font-family: "Lexend";
+            font-weight: 900; 
+            color: #d2e0ee;
+        }
+        
+        .pxyinput {
+    background: none;
+    font-family: "Inter";
+    padding: 0px 17px;
+    height: 48px;
+    user-select: none;
+    transition: all 350ms;
+    font-weight: 500;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #FFF;
+    border-radius: 25px;
+    margin-right: 3px;
+    margin-left: 3px;
+    outline: none;
+    width: calc(100% - 5vh); /* Adjust according to image width and padding */
+    padding-left: 40px; /* Ensure space for the image */
+  }
+
+        .nav-button {
+  width: 30px; /* Adjust width and height as needed */
+  height: 30px;
+    margin: 3px 3px;
+  background-size: cover; 
+  cursor: pointer; 
+}
+</style>
+
+
+</head>
+<body onload="startTime()">
+
+  <div class="nav">
+ 
+    <img src="assets/images/back.png" alt="Back" onclick="goBack()">
+    <img src="assets/images/foward.png" alt="Forward" onclick="goForward()">
+   
+    <div class="input-container">
+      <img src="assets/images/search.png" alt="Image" class="input-image">
+      <input class="pxyinput" type="text" placeholder="Search Google or type a URL">
+    </div>
+
+    <button class="nav-button" onclick="refreshFrame()" style="background-image: url('assets/images/refresh.png');"></button>
+    <img src="assets/images/fullscreen.png" alt="Fullscreen" onclick="toggleFullscreen()">
+  </div>
+
+
+    <p id="time"></p>
+    
+
+
+  <div class="center-container">
+    <h1>Amet<h69>hyst</h69>
+    <hr style="height: 1px; background-color: #d2e0ee; border-radius: 8px;">
+    
+    <div id="txt"></div>
+    <!-- <div class="input-container">
+      <img src="assets/images/search.png" alt="Image" class="input-image">
+      <input class="pxyinput" type="text" placeholder="Search Google or type a URL">
+    -->
+    </div>
+  </div>
+  <iframe class="frame">
+
+  </iframe>
+
+</body>
+
+<script src="js/index.js"></script>
+<script src="js/search.js"></script>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let ampm = h >= 12 ? 'PM' : 'AM'; // Determine whether it's AM or PM
+  h = h % 12 || 12; // Convert hours to 12-hour format
+
+  m = checkTime(m);
+
+  document.getElementById('txt').innerHTML =  h + ":" + m;
+  setTimeout(startTime, 1000);
+} 
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+
+  
+  </script>
+
+</html>

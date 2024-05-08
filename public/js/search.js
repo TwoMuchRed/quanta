@@ -47,11 +47,8 @@ function search(input, template) {
 
 
 function refreshFrame() {
-  var frames = document.querySelectorAll("iframe");
-  frames.forEach(function(frame) {
-    frame.contentWindow.location.reload();
-  });
-  console.log("Frames refreshed");
+  var frame = document.querySelector("iframe");
+  frame.contentWindow.location.reload();
 }
 
 

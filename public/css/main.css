@@ -28,6 +28,19 @@ h1 , h2 , h3  {
     margin-bottom: 10px;
 }
 
+h1  {
+  font-family: "Inter", "Lexend" sans-serif;
+  font-weight: 800;
+  color: #d8c4d9;
+}
+
+
+h69  {
+  font-family: "Inter", "Lexend" sans-serif;
+  font-weight: 800;
+  color: #d2e0ee;
+}
+
 
 
 
@@ -198,21 +211,7 @@ button:hover {
     height: auto; 
   }
   
-  .pxyinput {
-    background: none;
-    font-family: "Inter";
-    padding: 0px 17px;
-    height: 48px;
-    user-select: none;
-    transition: all 350ms;
-    font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, .2);
-    color: #FFF;
-    border-radius: 25px;
-    outline: none;
-    width: calc(100% - 40px); /* Adjust according to image width and padding */
-    padding-left: 40px; /* Ensure space for the image */
-  }
+
   
   .pxyinput:focus {
     border-radius: 8px;
