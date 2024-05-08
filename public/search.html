@@ -32,6 +32,9 @@
       align-items: center;
       justify-content: space-between;
       padding: 10px;
+      background-color: #1c1c1c;
+      border-bottom: 2px solid #d2e0ee;
+
     }
 
     .nav img {
@@ -70,13 +73,7 @@
     padding-left: 40px; /* Ensure space for the image */
   }
 
-        .nav-button {
-  width: 30px; /* Adjust width and height as needed */
-  height: 30px;
-    margin: 3px 3px;
-  background-size: cover; 
-  cursor: pointer; 
-}
+
 </style>
 
 
@@ -93,7 +90,7 @@
       <input class="pxyinput" type="text" placeholder="Search Google or type a URL">
     </div>
 
-    <button class="nav-button" onclick="refreshFrame()" style="background-image: url('assets/images/refresh.png');"></button>
+    <img src="assets/images/refresh.png" alt="Refresh" onclick="refreshFrame()">
     <img src="assets/images/fullscreen.png" alt="Fullscreen" onclick="toggleFullscreen()">
   </div>
 
