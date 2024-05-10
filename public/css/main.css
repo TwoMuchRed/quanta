@@ -7,7 +7,7 @@ body {
     color: var(--text-color);
     background-color: #111111;
     background-image: var(--background);
-    position: relative;
+    z-index: -55;
     height: 100vh;
     text-align: center;
     font-family: "Inter";
