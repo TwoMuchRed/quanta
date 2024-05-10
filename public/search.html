@@ -3,7 +3,7 @@
 
 <head>
   <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
-  <title>Amethyst</title>
+  <title>Quanta</title>
 
   <link rel="stylesheet" href="./css/master.css" />
   <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
@@ -33,14 +33,18 @@
       align-items: center;
       justify-content: space-between;
       padding: 10px;
+      height: 28px;
+      border-radius: 50px;
+      width: calc(100vh - 500px);
       background-color: #1c1c1c;
-      border-bottom: 2px solid #d2e0ee;
 
     }
 
     .nav img {
-      width: 30px; 
-      height: 30px; /* Adjust size as needed */
+      width: 20px; 
+      height: px; 
+      margin-right: 2vh;
+      margin-left: 2vh;
       cursor: pointer;
     }
 
@@ -52,15 +56,17 @@
     #txt {
             font-size: 40px; 
             font-family: "Lexend";
-            font-weight: 900; 
-            color: #d2e0ee;
+            font-weight: 200; 
+            color: #ffffff;
         }
         
         .pxyinput {
     background: none;
     font-family: "Inter";
     padding: 0px 17px;
-    height: 48px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 7px;
     user-select: none;
     transition: all 350ms;
     font-weight: 500;
@@ -68,10 +74,35 @@
     color: #FFF;
     border-radius: 25px;
     margin-right: 3px;
-    margin-left: 3px;
     outline: none;
-    width: calc(100% - 5vh); /* Adjust according to image width and padding */
-    padding-left: 40px; /* Ensure space for the image */
+    width: 10vh; /* Adjust according to image width and padding */
+    padding-left: 30px; /* Ensure space for the image */
+  }
+  
+  .input-container {
+    position: relative;
+    width: 350px;
+    user-select: none;
+    margin-top: 5px;
+  }
+  
+  .input-container img.input-image {
+    position: absolute;
+    top: 50%;
+    user-select: none;
+    transform: translateY(-50%);
+    width: 15px;
+    -webkit-user-drag: none;
+    height: auto; 
+  }
+  
+
+  
+  .pxyinput:focus {
+    border-radius: 8px;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
 
 
@@ -80,7 +111,7 @@
 
 </head>
 <body onload="startTime()">
-
+<center>
   <div class="nav">
  
     <img src="assets/images/back.png" alt="Back" onclick="goBack()">
@@ -90,18 +121,18 @@
       <img src="assets/images/search.png" alt="Image" class="input-image">
       <input class="pxyinput" type="text" placeholder="Search Google or type a URL">
     </div>
-
     <img src="assets/images/refresh.png" alt="Refresh" onclick="refreshFrame()">
     <img src="assets/images/fullscreen.png" alt="Fullscreen" onclick="toggleFullscreen()">
+   
   </div>
-
+</center>
 
     <p id="time"></p>
     
 
 
   <div class="center-container">
-    <h1>Amet<h69>hyst</h69>
+    <h1>Quanta</h1>
     <hr style="height: 1px; background-color: #d2e0ee; border-radius: 8px;">
     
     <div id="txt"></div>

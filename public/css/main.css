@@ -24,21 +24,14 @@ body {
    
 h1 , h2 , h3  {
     font-family: "Inter", "Lexend" sans-serif;
-    font-weight: 800;
+    font-weight: 200;
     margin-bottom: 10px;
 }
 
 h1  {
   font-family: "Inter", "Lexend" sans-serif;
-  font-weight: 800;
-  color: #d8c4d9;
-}
-
-
-h69  {
-  font-family: "Inter", "Lexend" sans-serif;
-  font-weight: 800;
-  color: #d2e0ee;
+  font-weight: 300;
+  color: #ffffff;
 }
 
 
@@ -192,33 +185,6 @@ button:hover {
   }
 
 
-  .input-container {
-    position: relative;
-    width: 350px;
-    user-select: none;
-    margin-top: 5px;
-  }
-  
-  .input-container img.input-image {
-    position: absolute;
-    left: 10px; 
-    top: 50%;
-    margin-left: 5px;
-    user-select: none;
-    transform: translateY(-50%);
-    width: 19px;
-    -webkit-user-drag: none;
-    height: auto; 
-  }
-  
-
-  
-  .pxyinput:focus {
-    border-radius: 8px;
-    animation: fadeInAnimation ease-in-out 0.3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
 
 
   
@@ -244,15 +210,22 @@ padding: 5px 15px;
 margin: 5px auto;
 }
 
- .frame {
+.frame {
   border-radius: 5px;
   background-color: rgb(35, 35, 35);
   display: block;
   margin: auto;
   border: none;
-  height: calc(100vh - 55px);
+  position: fixed; /* Use fixed positioning */
+  top: 0; /* Stick to the top of the viewport */
+  height: calc(100vh + 28px);
   width: 100%;
+  z-index: -1; /* Set z-index to position it behind everything */
 }
+
+
+
+
 
 .cardgroup {
   padding: 15px;
