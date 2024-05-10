@@ -204,9 +204,9 @@ margin: 5px auto;
   display: block;
   margin: auto;
   border: none;
-  position: fixed; /* Use fixed positioning */
+ 
   top: 0; /* Stick to the top of the viewport */
-  height: calc(100vh + 28px);
+  height: 100vh;
   width: 100%;
   z-index: 1; /* Set z-index to position it behind everything */
   pointer-events: none; /* Allow pointer events to pass through */
