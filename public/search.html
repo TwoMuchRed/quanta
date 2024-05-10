@@ -40,7 +40,9 @@
       height: 28px;
       border-radius: 50px;
       width: calc(100vh - 500px);
-      background-color: #1c1c1c;
+      background: transparent;
+      box-shadow: 0 0 10px rgba(28, 28, 28, 0.59);
+      backdrop-filter: blur(5px);
       margin-left: auto; /* Center horizontally */
       margin-right: auto;
       display: flex;
@@ -51,7 +53,7 @@
       left: 0;
       right: 0; 
       position: fixed;
-      z-index: 2; /* Ensure navbar is above frame */
+      z-index: 9999; /* Ensure navbar is above frame */
       height: 28px;
       border-radius: 50px;
 
