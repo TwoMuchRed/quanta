@@ -76,3 +76,8 @@ function goForward() {
   var frame = document.querySelector("iframe");
   frame.contentWindow.history.forward(); // Navigate forward in the iframe's history
 }
+
+function openInNewTab() {
+  const iframeSrc = document.querySelector("iframe").src;
+  window.open(iframeSrc, "_blank");
+}
