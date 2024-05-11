@@ -3,8 +3,8 @@
   <h1>Quanta</h1>
 </div>
 
-[Art Class]([https://www.google.com](https://github.com/art-class/v4))
-A Proxy made using If you fork this repository, please consider giving it a star ⭐!
+
+A Proxy made using [Art Class](https://github.com/art-class/v4)) If you fork this repository, please consider giving it a star ⭐!
 
 ## Deploy to a cloud service
 [![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://railway.app/new/template?template=https://github.com/art-class/v4)
