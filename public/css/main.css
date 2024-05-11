@@ -204,12 +204,10 @@ margin: 5px auto;
   display: block;
   margin: auto;
   border: none;
- 
-  top: 0; /* Stick to the top of the viewport */
+
   height: 100vh;
   width: 100%;
-  z-index: 9998; /* Set z-index to position it behind everything */
-  pointer-events: none; /* Allow pointer events to pass through */
+  z-index: 9998;
 }
 
 
