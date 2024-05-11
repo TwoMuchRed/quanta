@@ -2,6 +2,8 @@
   <img src="public/assets/images/icon.png" />
   <h1>Quanta</h1>
 </div>
+
+[Google](https://www.google.com)
 A Proxy made using [![Art Class](https://github.com/art-class/v4) If you fork this repository, please consider giving it a star ⭐!
 
 ## Deploy to a cloud service
