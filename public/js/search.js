@@ -82,8 +82,39 @@ function openInNewTab() {
   window.open(iframeSrc, "_blank");
 }
 
-function openDevTools() {
-  // Open developer tools for the iframe
-  var iframeWindow = document.getElementById("myIframe").contentWindow;
-  iframeWindow.openDevTools();
+function erudaToggle() {
+  const activeIframe = document.querySelector("#iframe-container iframe.active")
+  if (!activeIframe) {
+    console.error("No active iframe found")
+    return
+  }
+  const erudaWindow = activeIframe.contentWindow
+  if (!erudaWindow) {
+    console.error("No content window found for the active iframe")
+    return
+  }
+  if (erudaWindow.eruda) {
+    if (erudaWindow.eruda._isInit) {
+      erudaWindow.eruda.destroy()
+    } else {
+      console.error("Eruda is not initialized in the active iframe")
+    }
+  } else {
+    const erudaDocument = activeIframe.contentDocument
+    if (!erudaDocument) {
+      console.error("No content document found for the active iframe")
+      return
+    }
+    const script = erudaDocument.createElement("script")
+    script.src = "https://cdn.jsdelivr.net/npm/eruda"
+    script.onload = function () {
+      if (!erudaWindow.eruda) {
+        console.error("Failed to load Eruda in the active iframe")
+        return
+      }
+      erudaWindow.eruda.init()
+      erudaWindow.eruda.show()
+    }
+    erudaDocument.head.appendChild(script)
+  }
 }
