@@ -21,7 +21,7 @@ games.forEach(game => {
     document.querySelector("#gamecards").appendChild(card)
   }
 
-  card.classList.add("hvr-bob")
+  card.classList.add
   card.addEventListener("click", () => {
 
     if (game.id == "customgame") return loadcustomgame()

@@ -1,5 +1,58 @@
-@import url(themes.css);
+
+p {
+    text-align: center;
+    margin-top: 10vh;
+    font-family: "Inter", "Lexend" sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 50px;
+}
 
 
 
+.cardgroup {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    justify-content: center;
+    color: white;
+}
 
+.card i {
+    font-size: 100px;
+    margin-top: 5px;
+}
+
+.card img {
+    aspect-ratio: 1 / 1;
+    height: 100px;
+    width: 100px;
+}
+
+.card {
+    border-radius: 8px;
+    font-family: "Segou Ui";
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 1rem;
+    font-weight: 300;
+    margin: 3px;
+    max-width: 100px;
+    max-height: 120px;
+    text-align: center;
+
+}
+
+.card:hover {
+    background-color: #333333;
+}
+
+
+.card>* {
+    flex: 1 1 160px;
+}
+
+.description {
+    font-size: 10px;
+}

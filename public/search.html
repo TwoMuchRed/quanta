@@ -29,12 +29,11 @@
 
 
   .nav {
-
       position: fixed;
       z-index: 1;
       height: 28px;
       border-radius: 50px;
-      width: 50vh;
+      width: 55vh;
       background: rgba(21, 21, 21, 0.2);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(5px);
@@ -124,12 +123,31 @@
   }
 
 
-p  {
+h4  {
   color: #6a6a6a;
   font-size: 1.5vh;
   font-family: "Inter";
-  font-weight: 500;
+  font-weight: 450;
 
+
+}
+
+
+a {
+  font-weight: bold;
+  color: #6a6a6a;
+  font-size: 1.5vh;
+  font-family: "Inter";
+  transition: all 250ms;
+
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5vh;
+  font-family: "Inter";
+  font-weight: 450;
 
 }
 
@@ -149,15 +167,18 @@ p  {
     <img src="assets/images/back.png" alt="Back" onclick="goBack()">
     <img src="assets/images/refresh.png" alt="Refresh" onclick="refreshFrame()">
     <img src="assets/images/foward.png" alt="Forward" onclick="goForward()">
+    <img src="assets/images/games.png" alt="Games" onclick="window.location.href='gs.html'">
+    
    
     <div class="input-container">
       <img src="assets/images/search.png" alt="Image" class="input-image">
       <input class="pxyinput" type="text" placeholder="Search Google or type a URL">
     </div>
     <img src="assets/images/popout.png" alt="Popout" onclick="openInNewTab()">
+    
     <img src="assets/images/hide.png" alt="Hide navbar" onclick="toggleNavbar()">
     <img src="assets/images/fullscreen.png" alt="Fullscreen" onclick="toggleFullscreen()">
-   
+
   </div>
 </center>
 
@@ -167,7 +188,8 @@ p  {
 
   <div class="center-container">
     <h1>Quanta</h1>
-    <p>Made from art class</p>
+    <h4>Made Using <a href=https://github.com/art-class/v4>Art Class.</a></h4>
+  <a href=https://rubyarcade.lol/>Ruby Arcade</a>
     </div>
   </div>
 

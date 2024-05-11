@@ -3,7 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&display=swap');
 
+body {
+  background-color: #111111;
+  z-index: -1;
 
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -11,7 +15,7 @@
   
    
 h1 , h2 , h3  {
-    font-family: "Inter", "Lexend" sans-serif;
+    font-family: "-apple-system", "Lexend" ; 
     font-weight: 200;
     margin-bottom: 10px;
 }
@@ -55,22 +59,31 @@ a:hover {
     filter: brightness(80%);
 }
 
-button {
-    color: var(--background);
-    background-color: var(--accent);
+.btn {
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
     padding: 8px 15px;
-    border: none;
+    font-family: "Inter";
+    font-weight: 300;
     font-size: 18px;
-    border-radius: 5px;   
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 5px;  
     transition: 0.4s all;
+    margin-bottom: 3vh;
 }
 
+.btn:hover {
+  background-color: white;
+  color: #111111;
+    cursor: pointer;
+    font-weight: 300;
+}
 .play { font-family: "Montserrat"; font-weight: 700; color: var(--background); }
 
-button:hover {
-    filter: brightness(80%);
-    cursor: pointer;
-}
+
 
 .links {
     position: fixed;
@@ -113,22 +126,13 @@ button:hover {
     margin: 5px;
 }
 
-#gameInfo {
-    width: 25%;
-    height: 100%;
-  }
   
   #frame {
-    width: 75%;
-    height: 100%;
-    border-radius: 10px;
+    width: 100%;
+    height: 100vh;
     background-color: white;
   }
-  #gameInfo .gameHeader {
-    align-items: center;
-    justify-content: center;
-    margin: 25% 25px;
-  }
+
   
   #gameInfo div img {
     aspect-ratio: 1 / 1;
@@ -145,28 +149,9 @@ button:hover {
     bottom: 15px;
     width: 100%;
   }
+
   
-  #menubtns button {
-    border: 3px solid white;
-    font-family: "DM Sans";
-    padding: 7px 15px;
-    font-size: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    opacity: 0.7;
-    transition: 0.4s all;
-    margin: 5px 5px;
-  }
-  
-  #menubtns button:hover {
-    opacity: 1;
-    scale: 1.1;
-  }
+
   
   #gameInfo #gameDescription {
     margin: 15px;
@@ -214,42 +199,3 @@ margin: 5px auto;
 
 
 
-.cardgroup {
-  padding: 15px;
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: center;
-}
-
-
-.card img {
-  height: 60%;
-  margin-top: 15%;
-  width: 60%;
-  border-radius: 8px;
-  transition: transform 0.1s;
-  margin-bottom: 5px;
-}
-
-.card {
-  background-color: #111111;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  border: 2px solid transparent;
-  font-size: 10px;
-  width: 15vh;
-  height: 15vh;
-  font-weight: bold;
-  font-family: "Lexend", sans-serif;
-  margin: 20px;
-  position: relative;
-  overflow: hidden;
-  transition: all 350ms;
-}
-
-.card:hover {
-  background-color: #373737;
-  
-}

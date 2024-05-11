@@ -14,36 +14,87 @@
     <script src="/uv/uv.config.js"></script>
     <script src="./js/preload.js"></script>
   </head>
+<style>
 
+
+
+
+
+
+  input[type=text], button.secondary, select {
+     background-color: transparent;
+     transition: 0.4s border;
+     border-radius: 5px;
+     border: none;
+     font-family: "Inter";
+     font-weight: 400;
+     font-size: 12px;
+     color: white;
+     text-align: center;
+     border-radius: 25px;
+     transition: all 350ms;
+     padding: 5px 15px;
+     border: 2px solid rgba(255, 255, 255, 0.2);
+     margin: 5px auto;
+  }
+  input[type=text]:focus {
+    outline: none;
+    border-radius: 8px;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+ }
+
+ button.secondary img {
+  height: 25px;
+  width: 25px;
+  margin-top: 5px;
+  border-radius: 5px;
+ }
+
+
+
+
+</style>
   <body>
-    <nav>
-      <div class="logo">
-        <img src="./assets/images/icon.png" alt="Logo" draggable="false" />
-        <h1>Art Class</h1>
+    <div class="navbar">
+      <button onclick="window.location.href='index.html'">
+        <img
+          src="assets/images/icon.png"
+          class="logo"
+          width="27vh"
+          height="27vh"
+        />
+      </button>
+      
+      <div class="navbar-right">
+        <button onclick="window.location.href='search.html'">
+          <img src="assets/images/home.png" width="27hh" />
+        </button>
+        <button onclick="window.location.href='gs.html'">
+          <img src="assets/images/games.png" width="27hh" />
+        </button>
+        <button onclick="window.location.href='apps.html'">
+          <img src="assets/images/apps.png" width="27hh" />
+        </button>
+    
+        <button onclick="window.location.href='settings.html'">
+          <img src="assets/images/settings.png" width="27hh" />
+        </button>
       </div>
-
-      <p id="time"></p>
-
-      <div class="navitems">
-        <div class="navitem"><a href="/">Home</a></div>
-        <div class="navitem"><a href="/gs.html">Games</a></div>
-        <div class="navitem"><a href="/apps.html">Apps</a></div>
-        <div class="navitem"><a href="/emulator.html">Emulator</a></div>
-        <div class="navitem"><a href="/search.html">Search</a></div>
-      </div>
-    </nav>
+    </div>
 
     <div class="center-container">
-      <h1>Settings</h1>
+      <h1 style="color: white;">Settings</h1>
 
-      <h2>Tab cloaking</h2>
+      <h2 style="color: white;"">Tab cloaking</h2>
       <input type="text" id="tabname" placeholder="Tab name" />
       <button onclick="setTab()" class="secondary">Set tab name</button> <br />
       <input type="text" id="tabicon" placeholder="Tab icon" />
       <button onclick="setTab()" class="secondary">Set tab icon</button> <br />
 
       <button class="secondary" onclick="setTabPreset('default')">
-        <img src="/assets/images/icon.png" />
+        <img src="https://usequanta.vercel.app/assets/images/icon.png" />
       </button>
       <button class="secondary" onclick="setTabPreset('google')">
         <img
@@ -68,28 +119,12 @@
 
       <br /><br />
 
-      <h2>Themes</h2>
-      <select id="theme-select">
-        <option value="main">Default</option>
-        <option value="lgbtq">LGBTQIA+</option>
-        <option value="forest">Forest</option>
-        <option value="ocean">Ocean</option>
-        <option value="amoled">AMOLED</option>
-        <option value="white">MY EYES</option>
-        <option value="sunset">Sunset</option>
-        <option value="flash">Flash Bang</option>
-        <option value="matrix">Matrix</option>
-        <option value="beach">Beach</option>
-        <option value="murica">Murica'</option>
-        <option value="modern">Modern</option>
-
-        <!-- add more options for other themes -->
-      </select>
+      
 
       <br /><br />
 
-      <h2>Panic Key</h2>
-      <h4>
+      <h2 style="color: white;">Panic Key</h2>
+      <h4 style="color: white; font-weight: 200; margin-bottom: 10px;">
         WARNING: Panic keys trigger whenever you click that key whenever you
         click it, including typing on this page, so set it to a key you don't
         click often.
