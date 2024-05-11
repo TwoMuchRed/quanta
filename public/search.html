@@ -29,17 +29,12 @@
 
 
   .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px;
-      top: 0;
-      left: 0;
+
       position: fixed;
       z-index: 1;
       height: 28px;
       border-radius: 50px;
-      width: calc(100vh - 500px);
+      width: 50vh;
       background: rgba(21, 21, 21, 0.2);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(5px);
@@ -53,11 +48,11 @@
       left: 0;
       right: 0; 
       position: fixed;
-      z-index: 9999; /* Ensure navbar is above frame */
+      z-index: 9999; 
       height: 28px;
       border-radius: 50px;
 
-   /* Center horizontally */
+
 }
 
 
@@ -83,24 +78,7 @@
             color: #ffffff;
         }
         
-        .pxyinput {
-    background: none;
-    font-family: "Inter";
-    padding: 0px 17px;
-    height: 30px;
-    margin-right: 10px;
-    font-size: 7px;
-    user-select: none;
-    transition: all 350ms;
-    font-weight: 500;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    color: #FFF;
-    border-radius: 25px;
-    margin-right: 3px;
-    outline: none;
-    width: 10vh; /* Adjust according to image width and padding */
-    padding-left: 30px; /* Ensure space for the image */
-  }
+
   
   .input-container {
     position: relative;
@@ -120,7 +98,24 @@
   }
   
 
-  
+  .pxyinput {
+    background: none;
+    font-family: "Inter";
+    padding: 0px 17px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 7px;
+    user-select: none;
+    transition: all 350ms;
+    font-weight: 500;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #FFF;
+    border-radius: 25px;
+    margin-right: 3px;
+    outline: none;
+    width: 10vh; /* Adjust according to image width and padding */
+    padding-left: 30px; /* Ensure space for the image */
+  }
   .pxyinput:focus {
     border-radius: 8px;
     animation: fadeInAnimation ease-in-out 0.3s;
@@ -148,6 +143,7 @@ p  {
   <iframe class="frame">
 
   </iframe>
+  <center>
   <div class="nav">
  
     <img src="assets/images/back.png" alt="Back" onclick="goBack()">
@@ -159,10 +155,11 @@ p  {
       <input class="pxyinput" type="text" placeholder="Search Google or type a URL">
     </div>
     <img src="assets/images/popout.png" alt="Popout" onclick="openInNewTab()">
+    <img src="assets/images/devtools.png" alt="Inspect" onclick="devTools()">
     <img src="assets/images/fullscreen.png" alt="Fullscreen" onclick="toggleFullscreen()">
    
   </div>
-
+</center>
 
     <p id="time"></p>
     

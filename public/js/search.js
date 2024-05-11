@@ -81,3 +81,9 @@ function openInNewTab() {
   const iframeSrc = document.querySelector("iframe").src;
   window.open(iframeSrc, "_blank");
 }
+
+function openDevTools() {
+  // Open developer tools for the iframe
+  var iframeWindow = document.getElementById("myIframe").contentWindow;
+  iframeWindow.openDevTools();
+}
