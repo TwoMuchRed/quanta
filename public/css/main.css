@@ -127,7 +127,8 @@ h1 > span {
   
   #gameInfo div img {
     aspect-ratio: 1 / 1;
-    height: 75px;
+    height:  1px;
+    opacity: 0;
     border-radius: 5px;
   }
   
