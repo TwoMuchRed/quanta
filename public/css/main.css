@@ -48,16 +48,7 @@ h1 > span {
     text-align: center;
 }
 
-a, a:visited {
-    color: var(--accent);
-    text-decoration: none;
-    transition: 0.4s all;
-}
 
-a:hover {
-    text-decoration: underline;
-    filter: brightness(80%);
-}
 
 .btn {
     color: white;

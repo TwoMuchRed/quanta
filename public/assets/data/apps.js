@@ -39,7 +39,7 @@ var apps = [
       'id': 'vscode',
       'title': 'Visual Studio Code',
       'url': 'https://vscode.dev/',
-      'image': 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png'
+      'image': 'https://yt3.googleusercontent.com/_q52i8bUAEvcb7JR4e-eNTv23y2A_wg5sCz0NC0GrGtcw1CRMWJSOPVHUDh_bngD0q4gMvVeoA=s900-c-k-c0x00ffffff-no-rj'
     },
     {
       "id": "tiktok",
@@ -78,10 +78,10 @@ var apps = [
       'image': 'https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/SamCopeland/phpmeXx6V.png'
     },
     {
-      'id': 'movie-web',
-      'title': 'movie-web',
-      'url': 'http://movie-web.app/',
-      'image': 'https://github.com/movie-web/movie-web/blob/dev/public/android-chrome-512x512.png?raw=true'
+      'id': 'sudo-flix',
+      'title': 'sudo-flix',
+      'url': 'https://sudo-flix.lol/',
+      'image': 'https://sudo-flix.lol/android-chrome-192x192.png'
     },
     {
       'id': 'coolmathgames',
@@ -93,7 +93,7 @@ var apps = [
       'id': 'win11',
       'title': 'Windows 11 in React',
       'url': 'https://win11.blueedge.me/',
-      "image": "https://cdn.upload.systems/uploads/lnysPmIS.png",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAj3Djnq7_1FXL9I1z59Mn8fX-WPN64x9I419NrEAQsA&s",
       "description": "A remake of the Windows 11 UI in React.js"
     },
     {
@@ -108,6 +108,13 @@ var apps = [
       'title': 'Windows XP in React',
       'url': 'https://www.oonjaa.com/',
       "image": "https://archive.org/services/img/1d9464dbff7a1630882d0e2090cb714c",
+      "description": "Windows XP recreation in React.js"
+    },
+    {
+      'id': 'canva',
+      'title': 'Canva',
+      'url': 'https://canva.com/',
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/2048px-Canva_icon_2021.svg.png",
       "description": "Windows XP recreation in React.js"
     },
     {
