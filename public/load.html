@@ -20,12 +20,166 @@
       'params': {}
     };
   </script>
+
+  <style>
+
+body {
+    background-color: #111111;
+    z-index: -1;
+
+  }
+
+
+  .nav {
+      position: fixed;
+      z-index: 1;
+      height: 28px;
+      border-radius: 50px;
+      width: 55vh;
+      background: rgba(21, 21, 21, 0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(5px);
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      top: 0;
+      left: 0;
+      right: 0; 
+      position: fixed;
+      z-index: 9999; 
+      height: 28px;
+      border-radius: 50px;
+}
+
+
+    
+
+    .nav img {
+      width: 20px; 
+      height: px; 
+      margin-right: 2vh;
+      margin-left: 2vh;
+      cursor: pointer;
+    }
+
+    .nav img:hover {
+      opacity: 0.6;
+    }
+
+    .center-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    #txt {
+            font-size: 40px; 
+            font-family: "Lexend";
+            font-weight: 200; 
+            color: #ffffff;
+        }
+        
+
+  
+  .input-container {
+    position: relative;
+    width: 350px;
+    user-select: none;
+    margin-top: 5px;
+  }
+  
+  .input-container img.input-image {
+    position: absolute;
+    top: 50%;
+    user-select: none;
+    transform: translateY(-50%);
+    width: 15px;
+    -webkit-user-drag: none;
+    height: auto; 
+  }
+  
+
+  .pxyinput {
+    background: none;
+    font-family: "Inter";
+    padding: 0px 17px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 7px;
+    user-select: none;
+    transition: all 350ms;
+    font-weight: 500;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #FFF;
+    border-radius: 25px;
+    margin-right: 3px;
+    outline: none;
+    width: 10vh; /* Adjust according to image width and padding */
+    padding-left: 30px; /* Ensure space for the image */
+  }
+  .pxyinput:focus {
+    border-radius: 8px;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+
+h4  {
+  color: #6a6a6a;
+  font-size: 1.5vh;
+  font-family: "Inter";
+  font-weight: 450;
+
+
+}
+
+
+a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 1.5vh;
+  font-weight: 450;
+  font-family: "Inter";
+  transition: 0.3s all;
+}
+
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: 450;
+  font-size: 1.5vh;
+  font-family: "Inter";
+
+
+}
+  </style>
 </head>
 
 
 
 <body theme="main">
-
+  <center>
+    <div class="nav">
+   
+      <img src="assets/images/back.png" alt="Back" onclick="goBack()">
+      <img src="assets/images/refresh.png" alt="Refresh" onclick="refreshFrame()">
+      <img src="assets/images/foward.png" alt="Forward" onclick="goForward()">
+      
+     
+      <div class="input-container">
+        <img src="assets/images/search.png" alt="Image" class="input-image">
+        <input class="pxyinput" type="text" placeholder="Search Google or type a URL">
+      </div>
+      <img src="assets/images/popout.png" alt="Popout" onclick="openInNewTab()">
+      <img src="assets/images/hide.png" alt="Hide navbar" onclick="toggleNavbar()">
+      <img src="assets/images/fullscreen.png" alt="Fullscreen" onclick="toggleFullscreen()">
+  
+    </div>
+  </center>
 
   <div class="gamecontainer">
     <iframe allowfullscreen frameborder="0" id="frame"></iframe>
@@ -34,7 +188,26 @@
         <img id="gameImage" alt="icon" />
         <h3 id="gameTitle"></h3>
       </div>
+  <center>
+  <div class="nav">
+ 
+    <img src="assets/images/back.png" alt="Back" onclick="goBack()">
+    <img src="assets/images/refresh.png" alt="Refresh" onclick="refreshFrame()">
+    <img src="assets/images/foward.png" alt="Forward" onclick="goForward()">
+    <img src="assets/images/games.png" alt="Games" onclick="window.location.href='gs.html'">
+    
+   
+    <div class="input-container">
+      <img src="assets/images/search.png" alt="Image" class="input-image">
+      <input class="pxyinput" type="text" placeholder="Search Google or type a URL">
+    </div>
+    <img src="assets/images/popout.png" alt="Popout" onclick="openInNewTab()">
+    
+    <img src="assets/images/hide.png" alt="Hide navbar" onclick="toggleNavbar()">
+    <img src="assets/images/fullscreen.png" alt="Fullscreen" onclick="toggleFullscreen()">
 
+  </div>
+</center>
       <!-- <script type="text/javascript"
         src="//www.topcreativeformat.com/8d57283b953b8b546d6a04d4deac19dc/invoke.js"></script> -->
 
