@@ -55,21 +55,20 @@ games.forEach(game => {
   text.innerHTML = game.title
   card.appendChild(image)
   card.appendChild(text)
-
-  // Append the card to #gamecards or #favoritedgames based on whether it's favorited
+  // document.querySelector("#gamecards").appendChild(card)
   if (getObj("favoritedGames").includes(game.id)) {
     document.querySelector("#favoritedgames").appendChild(card)
   } else {
     document.querySelector("#gamecards").appendChild(card)
   }
 
+  card.classList.add
   card.addEventListener("click", () => {
+
     if (game.id == "customgame") return loadcustomgame()
-    // Instead of loading the game's URL, load Google.com
-    window.location.href = "https://www.google.com"
+    window.location.href = `load.html?game=https://google.com`
   })
 })
-
 
 
 
