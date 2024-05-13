@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
+  <title>Art Class</title>
+
+  <link rel="stylesheet" href="./css/master.css" />
+  <link rel="stylesheet" href=".css/cards.css" />
+  <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script src="./js/preload.js"></script>
+
+  <script>
+    atOptions = {
+      'key': 'fc0ad22bd8c1ea22c8c08df927121e8f',
+      'format': 'iframe',
+      'height': 60,
+      'width': 468,
+      'params': {}
+    };
+  </script>
+</head>
+
+<body >
+  
+  <div class="cardgroup" id="gamecards"></div>
+  <button class="btn" onclick="clearcustomgames()">
+    Clear custom games
+  </button>
+</body>
+
+<script src="./js/index.js"></script>
+<script src="./assets/data/games.js"></script>
+<script src="./js/games.js"></script>
+
+
+
+<script>
+
+
+if (!getObj("favoritedGames")) setObj("favoritedGames", [])
+games.forEach(game => {
+  var card = document.createElement("div")
+  var image = document.createElement("img")
+  var text = document.createElement("h4")
+  var descrip = document.createElement("p")
+  descrip.classList.add("description")
+  card.classList.add("card")
+
+  if (game.image) image.src = game.image
+  if (!game.image) image.src = "https://www.pngkey.com/png/full/167-1670247_white-globe-icon-png-holy-bible-new-international.png"
+  if (game.description) descrip.innerHTML = game.description
+  image.loading = "lazy"
+  text.innerHTML = game.title
+  card.appendChild(image)
+  card.appendChild(text)
+
+  // Append the card to #gamecards or #favoritedgames based on whether it's favorited
+  if (getObj("favoritedGames").includes(game.id)) {
+    document.querySelector("#favoritedgames").appendChild(card)
+  } else {
+    document.querySelector("#gamecards").appendChild(card)
+  }
+
+  card.addEventListener("click", () => {
+    if (game.id == "customgame") return loadcustomgame()
+    // Instead of loading the game's URL, load Google.com
+    window.location.href = "https://www.google.com"
+  })
+})
+
+
+
+
+</script>
+
+
+
+
+
+<script>
+  const searchInput = document.querySelector('#search')
+  const items = document.querySelectorAll('.card')
+
+  searchInput.addEventListener('input', function (event) {
+    const query = event.target.value.toLowerCase()
+
+    items.forEach(function (item) {
+      const title = item.querySelector('.card h4').textContent.toLowerCase()
+
+      if (title.includes(query)) {
+        item.style.display = 'block'
+      } else {
+        item.style.display = 'none'
+      }
+    })
+  })
+</script>
+
+</html>
