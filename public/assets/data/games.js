@@ -25,7 +25,6 @@ var games = [
   {
     id: 'cookieclicker',
     title: 'Cookie Clicker',
-    description: 'Cookie Clicker is an addictive incremental game where players click to produce cookies, unlock upgrades, and aim to amass an ever-growing mountain of delicious digital treats.',
     url: 'https://sushi8756.github.io/Cookie-Clicker-2.031/',
     image: 'https://cdn.discordapp.com/icons/339131488111034389/73f15cd93d96504af9877a53816d110c.png'
   },
@@ -44,7 +43,6 @@ var games = [
   {
     id: 'fbwg',
     title: 'Fireboy and Watergirl',
-    description: 'A 2 player game where you have to work together using logic and teamwork to get to the finish line.',
     url: 'https://educationgg-23704.web.app/games/FBWG4-main/index.html',
     image: 'https://play-lh.googleusercontent.com/5-YcjiTyMrPJEZe078dHMxnCxcg2A_8NWJZQieRvn2Gkf8JOuHZEbTmFyQ9gn5p2lnU'
   },
@@ -57,7 +55,6 @@ var games = [
   {
     id: 'osu',
     title: 'osu!',
-    description: 'A web version of osu!',
     url: 'https://web-osu.github.io/',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Osu%21_Logo_2016.svg/1200px-Osu%21_Logo_2016.svg.png',
   },
@@ -76,7 +73,6 @@ var games = [
   {
     id: 'backrooms',
     title: 'Backrooms',
-    description: 'Scary game based on the viral 4Chan post.',
     url: 'https://assets.3kh0.net/backrooms/index.html',
     image: 'https://media.wired.com/photos/627b0c1fb6048c47d506c6c0/1:1/w_679,h_679,c_limit/Backrooms-Games.jpg'
   },
@@ -113,14 +109,14 @@ var games = [
   {
     id: 'shellshockers',
     title: 'Shell Shockers',
-    description: 'Shell Shockers is unique online shooter in first-person perspective where all the characters are represented exclusively by eggs.',
+  
     url: 'https://assets.3kh0.net/shellshockers/index.html',
     image: 'https://play-lh.googleusercontent.com/P-nde227L29s8w5U44kTPLiEnMEJUhJpEr4jL6tD6LV65Xz0JZtI4wEyFN-smsNrx-Q'
   },
   {
     id: 'plantsvszombies',
     title: 'Plants Versus Zombies 1.0',
-    description: 'Plants Versus Zombies 1.0 is a tower defense video game where players strategically plant a variety of plants to fend off waves of zombie invaders.',
+   
     url: 'https://rawcdn.githack.com/carbonsystems-dev/gamevault/e5a7f73412c800c5f1258c830dc4052cedf27bfa/plants%20vs%20zombies%201/plants%20vs%20zombies.html',
     image: 'http://cm1.narvii.com/6715/5bef9754b89ffbf36e5afb2c4dac9860b9614987_00.jpg'
   },
@@ -140,8 +136,7 @@ var games = [
   {
     id: 'thefinalearth',
     title: 'The Final Earth',
-    description: 'Earth has been destroyed. It\'s a good thing you teleported to a new planet, also known as The Final Earth. Gather resources and build a colony',
-    url: 'https://assets.3kh0.net/the-final-earth/index.html',
+        url: 'https://assets.3kh0.net/the-final-earth/index.html',
     image: 'https://img.itch.zone/aW1nLzIyMTU1NDAucG5n/original/6vGlZe.png'
   },
   {
