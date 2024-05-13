@@ -5,6 +5,32 @@ var apps = [
       'image': 'assets/images/add.png'
     },
     {
+      "id": "discord",
+      "title": "Discord",
+      "url": "https://discord.com/app",
+      'image': 'https://static.vecteezy.com/system/resources/previews/006/892/625/original/discord-logo-icon-editorial-free-vector.jpg'
+    },
+    {
+      "id": "github",
+      "title": "Github",
+      "url": "https://discord.com/app",
+      'image': 'https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg'
+    },
+    {
+      "id": "youtube",
+      "title": "YouTube",
+      "url": "https://youtube.com",
+      'image': 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/YouTube_social_red_square_%282017%29.svg/2048px-YouTube_social_red_square_%282017%29.svg.png'
+    },
+    
+    {
+      "id": "geforce",
+      "title": "GeForce NOW",
+      "url": "https://play.geforcenow.com",
+      'image': 'https://raw.githubusercontent.com/proudparrot2/cdn/main/8z9zeDIT_400x400-removebg-preview.png'
+    },
+    
+    {
       "id": "google",
       "title": "Google",
       "url": "https://www.google.com/?safe=active&ssui=on",
@@ -12,10 +38,36 @@ var apps = [
       
     },
     {
-      "id": "discord",
-      "title": "Discord",
-      "url": "https://discord.com/app",
-      'image': 'https://static.vecteezy.com/system/resources/previews/006/892/625/original/discord-logo-icon-editorial-free-vector.jpg'
+      "id": "tiktok",
+      "title": "TikTok",
+      "url": "https://tiktok.com",
+      'image': 'https://sf-tb-sg.ibytedtos.com/obj/eden-sg/uhtyvueh7nulogpoguhm/tiktok-icon2.png'
+    },
+    
+    {
+      'id': 'spotify',
+      'title': 'Spotify',
+      'url': 'https://open.spotify.com/browse',
+      'image': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png'
+    },
+    {
+      'id': 'copilot',
+      'title': 'Copilot',
+      'url': 'https://copilot.microsoft.com/',
+      'image': 'https://pic.clubic.com/v1/images/2161708/raw.webp?fit=smartCrop&width=550&height=550&hash=7330f29cb248560435e7c2faeea25bf161163ced'
+    },
+    {
+      'id': 'mathway',
+      'title': 'Mathway',
+      'url': 'https://www.mathway.com/Algebra',
+      'image': 'https://yt3.googleusercontent.com/ytc/AIdro_mcvYJ1vvtZKs5Kv3r5AnSO_btZwyv3JOl517ccthnk78U=s900-c-k-c0x00ffffff-no-rj'
+    },
+    
+    {
+      'id': 'vscode',
+      'title': 'Visual Studio Code',
+      'url': 'https://vscode.dev/',
+      'image': 'https://yt3.googleusercontent.com/_q52i8bUAEvcb7JR4e-eNTv23y2A_wg5sCz0NC0GrGtcw1CRMWJSOPVHUDh_bngD0q4gMvVeoA=s900-c-k-c0x00ffffff-no-rj'
     },
     {
       "id": "telegram",
@@ -30,46 +82,16 @@ var apps = [
       'image': 'https://yt3.googleusercontent.com/cPlwwgZkQQgHRLAg7jvJG4yKGLDId6NH7H_S87TCoEV_dbsF9Me_4YSBL5DyMsndx6hzoZxHUw=s176-c-k-c0x00ffffff-no-rj'
     },
     {
-      "id": "geforce",
-      "title": "GeForce NOW",
-      "url": "https://play.geforcenow.com",
-      'image': 'https://raw.githubusercontent.com/proudparrot2/cdn/main/8z9zeDIT_400x400-removebg-preview.png'
-    },
-    {
-      'id': 'vscode',
-      'title': 'Visual Studio Code',
-      'url': 'https://vscode.dev/',
-      'image': 'https://yt3.googleusercontent.com/_q52i8bUAEvcb7JR4e-eNTv23y2A_wg5sCz0NC0GrGtcw1CRMWJSOPVHUDh_bngD0q4gMvVeoA=s900-c-k-c0x00ffffff-no-rj'
-    },
-    {
-      "id": "tiktok",
-      "title": "TikTok",
-      "url": "https://tiktok.com",
-      'image': 'https://sf-tb-sg.ibytedtos.com/obj/eden-sg/uhtyvueh7nulogpoguhm/tiktok-icon2.png'
-    },
-    {
       "id": "reddit",
       "title": "Reddit",
       "url": "https://reddit.com",
       'image': 'https://www.redditinc.com/assets/images/site/reddit-logo.png'
     },
     {
-      "id": "youtube",
-      "title": "YouTube",
-      "url": "https://youtube.com",
-      'image': 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/YouTube_social_red_square_%282017%29.svg/2048px-YouTube_social_red_square_%282017%29.svg.png'
-    },
-    {
       "id": "twitter",
       "title": "Twitter",
       "url": "https://twitter.com",
       'image': 'https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png'
-    },
-    {
-      'id': 'spotify',
-      'title': 'Spotify',
-      'url': 'https://open.spotify.com/browse',
-      'image': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png'
     },
     {
       'id': 'chess',
