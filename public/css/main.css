@@ -109,13 +109,7 @@ h1 > span {
     justify-content: flex-end;
 }
 
-.gamecontainer {
-    height: 99vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-}
+
 
   
   #frame {
