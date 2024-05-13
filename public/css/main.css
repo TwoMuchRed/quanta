@@ -132,21 +132,26 @@ h1 > span {
     border-radius: 5px;
   }
   
-  #gameInfo div h3 { margin-left: 15px; }
+  #gameInfo div h3 { height:  1px;
+    opacity: 0; }
   
-  #gameInfo { position: relative; }
+  #gameInfo { position: relative;     height:  1px;
+    opacity: 0; }
   
   #gameInfo #menubtns {
     position: absolute;
     bottom: 15px;
     width: 100%;
+    height:  1px;
+    opacity: 0;
   }
 
   
 
   
   #gameInfo #gameDescription {
-    margin: 15px;
+    height:  1px;
+    opacity: 0;
   }
 
 
