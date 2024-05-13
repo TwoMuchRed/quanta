@@ -12,39 +12,46 @@
 
     <script src="./js/preload.js"></script>
   </head>
-
+  <style>
+    .btn {
+      color: white;
+      border: 2px solid white;
+      background-color: transparent;
+      padding: 8px 15px;
+      font-family: "Inter";
+      font-weight: 300;
+      font-size: 18px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      border-radius: 5px;  
+      transition: 0.4s all;
+      margin-bottom: 3vh;
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color: #111111;
+      cursor: pointer;
+      font-weight: 300;
+  }
+  </style>
   <body>
-    <nav>
-      <div class="logo">
-        <img src="./assets/images/icon.png" alt="Logo" draggable="false" />
-        <h1>Art Class</h1>
-      </div>
 
-      <p id="time"></p>
-
-      <div class="navitems">
-        <div class="navitem"><a href="/">Home</a></div>
-        <div class="navitem"><a href="/gs.html">Games</a></div>
-        <div class="navitem"><a href="/apps.html">Apps</a></div>
-        <div class="navitem"><a href="/emulator.html">Emulator</a></div>
-        <div class="navitem"><a href="/search.html">Search</a></div>
-      </div>
-    </nav>
 
     <div class="center-container">
-      <h1>404</h1>
-      <p id="splash">This probably wasn't supposed to happen.</p>
       <br />
-      <p>
-        In the event that isn't supposed to happen, <br />you can report it in
-        our <a href="https://discord.gg/desmos">Discord server.</a>
-      </p>
+
       <br />
-      <button onclick="window.location.href='/index.html'" class="button play">
-        Go home?
+      <button onclick="refreshPage()" class="btn">
+        Click
       </button>
     </div>
-  </body>
-
-  <script src="./js/index.js"></script>
+    
+    <script>
+    function refreshPage() {
+      location.reload(); // Refresh the current page
+    }
+    </script>
+  </script>
 </html>
