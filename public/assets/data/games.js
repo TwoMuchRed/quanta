@@ -530,6 +530,12 @@ var games = [
     image: 'https://play-lh.googleusercontent.com/cZHORa1z78dfMsP_nxCkplmHGUx5wfjY0x2jK59GWL7rUL5o6c_KiQ7QL9o4T22qbH8'
   },
   {
+    id: 'shellshockers',
+    title: 'Shell shockers',
+    url: 'https://shellshock.io/',
+    image: 'https://pbs.twimg.com/profile_images/1456048577839435781/GiJJhpA3_400x400.jpg'
+  },
+  {
     id: 'raccoonretail',
     title: 'Raccoon Retail',
     url: 'https://www.coolmathgames.com/0-raccoon-retail/play',
