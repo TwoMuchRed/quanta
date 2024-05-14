@@ -107,13 +107,6 @@ var games = [
     image: 'https://play-lh.googleusercontent.com/Pl2nmu5U9CH3NQqLBTjnokoV325zESrX6KIaHrwSqREEJDWIv1yJpRCXzl9r3oMnEWHC',
   },
   {
-    id: 'shellshockers',
-    title: 'Shell Shockers',
-  
-    url: 'https://assets.3kh0.net/shellshockers/index.html',
-    image: 'https://play-lh.googleusercontent.com/P-nde227L29s8w5U44kTPLiEnMEJUhJpEr4jL6tD6LV65Xz0JZtI4wEyFN-smsNrx-Q'
-  },
-  {
     id: 'plantsvszombies',
     title: 'Plants Versus Zombies 1.0',
    
