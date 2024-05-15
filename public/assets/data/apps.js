@@ -140,6 +140,13 @@ var apps = [
       "description": "Windows XP recreation in React.js"
     },
     {
+      'id': 'crazygames',
+      'title': 'Crazy Games',
+      'url': 'https://www.crazygames.com/',
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Crazygames_jpg_logo.jpg/800px-Crazygames_jpg_logo.jpg",
+      "description": "Windows XP recreation in React.js"
+    },
+    {
       'id': 'gbaemulator',
       'title': 'GBA Emulator',
       'url': 'https://cattn.github.io/gba',
