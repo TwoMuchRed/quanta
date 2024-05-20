@@ -422,6 +422,13 @@ var games = [
     description: 'EXPERIMENTAL: This may or may not work for you. Please don\'t report it if it doesn\'t. If you have bad WiFi, it may load slower than usual.'
   },
   {
+    id: 'fortnite',
+    title: 'Fortnite',
+    url: 'https://play.geforcenow.com/games?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a&lang=en_US&asset-id=01_539a9bf4-eec6-4271-95c9-1dbc4c5f0479',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Fortnite_F_lettermark_logo.png',
+    description: 'Forn it'
+  },
+  {
     id: 'baconmaydie',
     title: 'Bacon May Die',
     url: 'https://rawcdn.githack.com/nightrose-labs/quartz/c1832d589bc39c298bd23149733fca1026972d06/2/e333d315-40d0-46f6-a1ef-7e3f6bdd5113/index.html',
