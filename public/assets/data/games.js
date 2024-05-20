@@ -207,20 +207,7 @@ var games = [
     url: 'https://assets.3kh0.net/2048/index.html',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/2048_logo.svg/220px-2048_logo.svg.png'
   },
-  {
-    id: 'roblox',
-    title: 'Roblox',
-    url: 'https://now.gg/apps/roblox-corporation/5349/roblox.html',
-    image: 'https://play-lh.googleusercontent.com/WNWZaxi9RdJKe2GQM3vqXIAkk69mnIl4Cc8EyZcir2SKlVOxeUv9tZGfNTmNaLC717Ht=w240-h480-rw',
-    description: 'EXPERIMENTAL: This may or may not work for you. Please don\'t report it if it doesn\'t. If you have bad WiFi, it may load slower than usual.'
-  },
-  {
-    id: 'fortnite',
-    title: 'Fortnite',
-    url: 'https://play.geforcenow.com/games?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a&lang=en_US&asset-id=01_539a9bf4-eec6-4271-95c9-1dbc4c5f0479',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Fortnite_F_lettermark_logo.png',
-    description: 'Forn it'
-  },
+
   {
     id: 'baconmaydie',
     title: 'Bacon May Die',

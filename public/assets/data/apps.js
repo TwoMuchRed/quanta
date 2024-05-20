@@ -133,6 +133,20 @@ var apps = [
       "description": "Windows XP recreation in React.js"
     },
     {
+      'id': 'roblox',
+      'title': 'Roblox',
+      'url': 'https://shuttle.lol/apps/roblox-corporation/5349/roblox.html',
+      "image": "https://archive.org/services/img/1d9464dbff7a1630882d0e2090cb714c",
+      "description": "hsdhgsfhs"
+    },
+    {
+      id: 'fortnite',
+      title: 'Fortnite',
+      url: 'https://play.geforcenow.com/games?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a&lang=en_US&asset-id=01_539a9bf4-eec6-4271-95c9-1dbc4c5f0479',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Fortnite_F_lettermark_logo.png',
+      description: 'Forn it'
+    },
+    {
       'id': 'canva',
       'title': 'Canva',
       'url': 'https://canva.com/',
